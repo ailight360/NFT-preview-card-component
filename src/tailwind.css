@@ -3,11 +3,19 @@
 @tailwind utilities;  
 
 @layer utilities{
+    :root{
+        --soft-blue:215, 51%, 70%;
+        --cyan: 178, 100%, 50%;
+        --dark-blue-main: 217, 54%, 11%;
+        --dark-blue-card: 216, 50%, 16%;
+        --dark-blue-line: 215, 32%, 27%;
+    }
+
     .bg-main{
-        background-color: hsl(217, 54%, 11%);
+        background-color: hsl(var(--dark-blue-main),1);
     }
     .bg-card{
-        background-color: hsl(217, 54%, 11%);
+        background-color: hsl(var(--dark-blue-card),1);
     }
 }
 
