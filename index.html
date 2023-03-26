@@ -11,10 +11,15 @@
     ===========================-->
     <title>Document</title>
 
-
     <!-- FAVICON 
     ==========================-->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- FONT
+    ==========================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- TAILWINDCSS
     ===========================-->
@@ -26,17 +31,22 @@
   <body class="bg-main">
 
     <main class="grid place-content-center h-screen">
-        <section class="bg-card p-6 rounded-2xl w-[348px] card-shadow">
-            <img class="w-[300px] rounded-xl" src="./images/image-equilibrium.jpg" alt="Equilibrium">
-            <h1>Equilibrium #3429</h1>
-            <p>Our Equilibrium collection promotes balance and calm.</p>
-            <div class="flex items-center justify-between">
-                <span class="flex items-center gap-3"><img src="./images/icon-ethereum.svg" alt="">0.041 ETH</span>
-                <span class="flex items-center gap-3"><img src="./images/icon-clock.svg" alt="">3 days left</span>
+        <section class="bg-card p-6 rounded-2xl w-[348px] card-shadow font-outfit flex flex-col gap-5">
+            
+            <div class="w-[300px] rounded-xl cursor-pointer relative card-hover">
+              <img class="card-img-hover" src="./images/image-equilibrium.jpg" alt="Equilibrium">
+              <img class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden " src="./images/icon-view.svg" alt="">
+            </div>
+
+            <h1 class="text-white font-bold text-xl hover:text-cyan"><a href="#">Equilibrium #3429</a></h1>
+            <p class="text-soft font-light">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="flex items-center justify-between border-line pb-4">
+                <span class="flex items-center gap-3 text-cyan font-normal"><img src="./images/icon-ethereum.svg" alt="">0.041 ETH</span>
+                <span class="flex items-center gap-3 text-soft font-normal""><img src="./images/icon-clock.svg" alt="">3 days left</span>
             </div>
             <div class="flex items-center gap-3">
-                <img class="w-8" src="./images/image-avatar.png" alt="">
-                <p>Creation of <a href="#">Jules Wyvern</a></p>
+                <img class="w-8 border-2 rounded-full" src="./images/image-avatar.png" alt="">
+                <p class="text-soft font-normal">Creation of <a href="#" class="text-white hover:text-cyan">Jules Wyvern</a></p>
             </div>
         </section>
     </main>

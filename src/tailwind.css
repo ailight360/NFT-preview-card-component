@@ -18,8 +18,31 @@
         background-color: hsl(var(--dark-blue-card),1);
     }
 
+    .text-soft{
+        color:hsl(var(--soft-blue));
+    }
+
+    .text-cyan{
+        color:hsl(var(--cyan));
+    }
+    .border-line{
+        border-bottom: 1px solid hsl(var(--dark-blue-line));
+    }
     .card-shadow{
         box-shadow: 0px 30px 0px 20px #0000001f, 0px 0px 0px 40px #0000000a;
+    }
+    .card-img-hover:hover {
+        filter: Invert(35%) sepia(88%) saturate(614%) hue-rotate(151deg) brightness(107%) contrast(106%);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .card-hover:hover img {
+        display: block;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .font-outfit{
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
     }
 }
 
